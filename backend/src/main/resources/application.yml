@@ -3,6 +3,9 @@ spring:
     url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/leadrelay}
     username: ${DATABASE_USERNAME:postgres}
     password: ${DATABASE_PASSWORD:postgres}
+  sql:
+    init:
+      mode: always
   jpa:
     hibernate:
       ddl-auto: validate
