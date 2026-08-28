@@ -3,47 +3,76 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="SupportOS — simple customer support for growing businesses.">
-  <title>SupportOS — Customer Support, Simplified</title>
+  <meta name="description" content="SupportOS — a managed customer support workspace for growing businesses.">
+  <meta name="theme-color" content="#0b1020">
+  <title>SupportOS — Customer support that closes the loop</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="nav">
-    <div class="brand"><span class="mark">S</span> SupportOS</div>
-    <a class="button ghost" href="#pricing">Pricing</a>
+  <header class="nav shell">
+    <a class="brand" href="#top" aria-label="SupportOS home"><span class="mark">S</span><span>SupportOS</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="#features">Product</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#pricing">Pricing</a>
+      <a class="button small" href="#pilot">Book a pilot</a>
+    </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="eyebrow">CUSTOMER SUPPORT FOR GROWING BUSINESSES</div>
-      <h1>Turn every customer message into a resolved conversation.</h1>
-      <p class="lead">One branded inbox for website chat, email, leads and follow-ups — powered by proven open-source infrastructure and tailored for your business.</p>
-      <div class="actions">
-        <a class="button primary" href="#pilot">Join the pilot</a>
-        <a class="button ghost" href="#features">See how it works</a>
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <div class="eyebrow">CUSTOMER SUPPORT OS · BUILT FOR SMES</div>
+        <h1>Every enquiry gets an owner, a next step and a resolution.</h1>
+        <p class="lead">A branded support workspace for website chat, email and customer follow-up — with automation where it saves your team time.</p>
+        <div class="actions">
+          <a class="button primary" href="#pilot">Book the first 3 pilots</a>
+          <a class="button secondary" href="#workflow">See the workflow</a>
+        </div>
+        <div class="proof"><span>✓ Managed setup</span><span>✓ Your brand</span><span>✓ Start with one workflow</span></div>
       </div>
-      <div class="trust">Start small · Managed setup · No long implementation project</div>
+
+      <div class="app-preview" aria-label="SupportOS dashboard preview">
+        <div class="window-top"><span></span><span></span><span></span><b>SupportOS Inbox</b></div>
+        <div class="dashboard">
+          <aside><div class="side-logo">S</div><div class="side-item active">Inbox <em>12</em></div><div class="side-item">Leads</div><div class="side-item">Customers</div><div class="side-item">Reports</div></aside>
+          <div class="inbox"><div class="inbox-head"><strong>Open conversations</strong><span>Today · 12</span></div>
+            <div class="ticket active"><div class="avatar">AK</div><div><b>Arun Kumar</b><p>Need a quotation for 25 units</p></div><time>2m</time></div>
+            <div class="ticket"><div class="avatar">PM</div><div><b>Priya Medicals</b><p>Can someone help with my order?</p></div><time>8m</time></div>
+            <div class="ticket"><div class="avatar">RK</div><div><b>Ravi Kumar</b><p>Website enquiry · follow-up</p></div><time>21m</time></div>
+          </div>
+          <div class="conversation"><div class="conversation-head"><div><b>Arun Kumar</b><small>Website · New lead</small></div><span class="status">Open</span></div><div class="messages"><div class="msg customer">Hi, I need a quotation for 25 units.</div><div class="msg agent">Absolutely. I can help with that. What delivery location should we quote for?</div><div class="msg customer">Ranipet, Tamil Nadu.</div></div><div class="reply"><span>AI draft ready</span><button>Send reply</button></div></div>
+        </div>
+      </div>
     </section>
 
-    <section id="features" class="grid">
-      <article><span>01</span><h2>Unified inbox</h2><p>Bring customer conversations into one workspace instead of checking multiple apps.</p></article>
-      <article><span>02</span><h2>Smart routing</h2><p>Route enquiries to the right person with simple rules and reusable workflows.</p></article>
-      <article><span>03</span><h2>AI assistance</h2><p>Draft replies, summarize conversations and surface the next action without replacing human support.</p></article>
-      <article><span>04</span><h2>Business reports</h2><p>See response time, unresolved conversations, lead volume and team workload.</p></article>
-      <article><span>05</span><h2>Your brand</h2><p>Your domain, colors, onboarding and industry-specific workflows form the customer-facing product.</p></article>
-      <article><span>06</span><h2>Managed hosting</h2><p>We handle deployment, updates, backups and monitoring so customers don't need DevOps staff.</p></article>
+    <section id="features" class="section shell">
+      <div class="section-head"><div><div class="eyebrow">THE PRODUCT</div><h2>Less inbox chaos. More completed work.</h2></div><p>SupportOS starts with proven support infrastructure, then adds the workflows, branding and service layer that make it useful for a specific business.</p></div>
+      <div class="grid">
+        <article><span>01</span><h3>Unified inbox</h3><p>Bring website conversations and email into one operational workspace.</p></article>
+        <article><span>02</span><h3>Lead routing</h3><p>Assign enquiries, tag intent and make the next action visible.</p></article>
+        <article><span>03</span><h3>AI assistance</h3><p>Draft replies and summaries while keeping humans in control of customer communication.</p></article>
+        <article><span>04</span><h3>Follow-up engine</h3><p>Turn unanswered enquiries into tasks instead of letting leads disappear.</p></article>
+        <article><span>05</span><h3>Business reports</h3><p>Track response time, unresolved conversations, lead volume and workload.</p></article>
+        <article><span>06</span><h3>Managed service</h3><p>Deployment, backups, updates and monitoring are part of the service rather than the customer's job.</p></article>
+      </div>
     </section>
 
-    <section id="pricing" class="pricing">
-      <div><div class="eyebrow">PILOT PRICING</div><h2>Simple enough to sell locally.</h2><p>Validate demand before building expensive features.</p></div>
-      <div class="price"><strong>₹999</strong><span>/ month</span><p>Starter pilot<br>+ optional setup fee</p></div>
+    <section id="workflow" class="workflow">
+      <div class="shell"><div class="eyebrow">HOW WE SELL IT</div><h2>One painful workflow first. Then scale.</h2>
+        <div class="steps"><div><strong>01</strong><b>Capture</b><p>Customer sends an enquiry.</p></div><i>→</i><div><strong>02</strong><b>Qualify</b><p>Tag and route it automatically.</p></div><i>→</i><div><strong>03</strong><b>Resolve</b><p>Agent responds with AI assistance.</p></div><i>→</i><div><strong>04</strong><b>Follow up</b><p>Unresolved leads become tasks.</p></div><i>→</i><div><strong>05</strong><b>Measure</b><p>Owner sees the business result.</p></div></div>
+      </div>
     </section>
 
-    <section id="pilot" class="cta">
-      <div><div class="eyebrow">FIRST 3 CUSTOMERS</div><h2>Build the product around real businesses.</h2><p>Pick one niche, install the workflow, observe what customers repeatedly ask for, then productize it.</p></div>
-      <a class="button primary" href="mailto:hello@example.com?subject=SupportOS%20Pilot">Request pilot</a>
+    <section id="pricing" class="section shell">
+      <div class="pricing"><div><div class="eyebrow">PILOT OFFER</div><h2>Start at ₹999/month.</h2><p>Validate the workflow before paying for unnecessary complexity. Setup and custom integrations can be quoted separately.</p></div><div class="price-card"><span>Starter</span><strong>₹999</strong><small>/ month</small><ul><li>Branded support workspace</li><li>Website chat + email</li><li>Basic automation</li><li>Reports</li><li>Managed deployment</li></ul><a class="button primary" href="#pilot">Apply for pilot</a></div></div>
+    </section>
+
+    <section id="pilot" class="cta shell">
+      <div><div class="eyebrow">FIRST 3 CUSTOMERS</div><h2>Don't build features nobody asked for.</h2><p>We will install one workflow, measure the result, and only build what customers repeatedly need.</p></div>
+      <div class="cta-box"><b>What happens next?</b><ol><li>Choose your business niche.</li><li>Set up one real support workflow.</li><li>Run it with the first pilot customers.</li><li>Turn repeated work into product features.</li></ol><a class="button primary" href="mailto:rajivgandhi@example.com?subject=SupportOS%20Pilot%20Interest">Start the pilot</a></div>
     </section>
   </main>
-  <footer>SupportOS MVP · Built as a commercial layer around open-source infrastructure.</footer>
+  <footer class="shell"><span>SupportOS MVP</span><span>Commercial product layer · Open-source infrastructure</span></footer>
 </body>
 </html>
